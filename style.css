@@ -1,7 +1,7 @@
 .background {
     position: absolute;
-    width: fit-content;
-    height: fit-content;
+    width: 100vw;
+    height: 100vh;
     top: 0px;
     left: 0px;
     background-image: url(images/background.jpg);
@@ -54,36 +54,78 @@
     font-family: 'Cinzel', serif;
     font-size: 20px;
 }
-.form{
+
+.form {
     position: absolute;
-    top:70vh;
-    left:5vw;
+    top: 70vh;
+    left: 5vw;
 }
-.buttonSubs{
+
+.buttonSubs {
     text-decoration: none;
-    border:none;
-    width:100px;
-    height:40px;
-    border:1px solid white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
     border-radius: 5px;
-    background:rgb(255, 248, 211);
+    background: rgb(255, 248, 211);
     font-size: large;
 }
-.format{
-    padding:10px;}
+
+.format {
+    padding: 10px;
+}
+
 .subscribe {
+    border-radius:5px;
     border-top: none;
     border-left: none;
     border-right: none;
-    width:300px;
+    width: 300px;
     border-bottom-width: 5px;
     border-bottom-color: rgb(245, 180, 0);
     border-bottom-style: solid;
     font-family: 'Mitr', sans-serif;
     font-size: medium;
 }
+
 #mc_embed_signup {
-    width:100%;
+    width: 100%;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    .logoanimation {
+        width: 20vw;
+        height: 20vw;
+        top: 5vw;
+        left: 5vw;
+    }
+
+    .background {
+        background-image: url(images/bgSmall.jpg);
+        top: 20vh;
+        background-attachment: fixed;
+        height: 100%;
+        z-index: -10;
+    }
+
+    .form {
+        /* display: none; */
+        position: absolute;
+        float: right;
+        top: 60vh;
+        left: 5vw;
+        z-index: 1;
+    }
+
+    .comingSoonText {
+        top: 50vw;
+        left: 5vw;
+    }
+
+    .subscribe {
+        
+    }
 }
